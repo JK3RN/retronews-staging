@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
+<channel><title>Local Test Feed</title><item><title>Offline article</title><link>/article</link>
+<guid>one</guid><pubDate>Fri, 16 Oct 2026 10:00:00 GMT</pubDate>
+<description><![CDATA[<p>Short feed summary.</p><img src="/image.png">]]></description>
+</item></channel></rss>

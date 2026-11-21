@@ -1,0 +1,14 @@
+[project]
+name = "retronews"
+version = "0.1.0"
+description = "Native GTK offline-first RSS/Atom reader"
+requires-python = ">=3.11"
+
+[project.scripts]
+retronews = "retronews.__main__:main"
+
+[tool.setuptools]
+packages = ["retronews"]
+
+[tool.setuptools.package-data]
+retronews = ["feeds.json"]
