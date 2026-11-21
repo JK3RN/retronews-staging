@@ -9,9 +9,12 @@ docs/LICENSING.md
 docs/RELEASE-NOTES.md
 docs/SECURITY-PRIVACY.md
 docs/TEST-REPORT.md
+docs/showcase/demo.gif
 docs/showcase/headlines.png
 docs/showcase/language.png
+docs/showcase/original.png
 docs/showcase/reader.png
+docs/showcase/reference-sweep.png
 docs/showcase/serve.py
 install.py
 pyproject.toml

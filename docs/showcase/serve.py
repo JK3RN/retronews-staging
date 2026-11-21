@@ -32,6 +32,9 @@ FEEDS = {
     )),
 }
 
+MEDIA_PATH = '/media/reference-sweep.png'
+MEDIA = Path(__file__).with_name('reference-sweep.png')
+
 FEATURE = (
     '03:20 UTC / CALIBRATION',
     'The array runs against a quiet reference field before tracking the survey target. '
@@ -62,12 +65,14 @@ def feed_xml(key):
         title, summary = escape(title), escape(summary)
         if key in ('science', 'linux'):
             content = ''
+            enclosure = ''
             if key == 'science' and index == 0:
                 markup = ''.join(f'<p>{escape(paragraph)}</p>' for paragraph in FEATURE)
                 content = f'<content type="html">{escape(markup)}</content>'
+                enclosure = f'<link rel="enclosure" type="image/png" href="{MEDIA_PATH}"/>'
             entries.append(f'<entry><id>urn:retronews:{key}:{index + 1}</id><title>{title}</title>'
                            f'<link href="{path}"/><updated>{published.isoformat()}</updated>'
-                           f'<summary>{summary}</summary>{content}</entry>')
+                           f'<summary>{summary}</summary>{content}{enclosure}</entry>')
         else:
             entries.append(f'<item><title>{title}</title><link>{path}</link>'
                            f'<pubDate>{format_datetime(published)}</pubDate>'
@@ -84,6 +89,8 @@ class Handler(BaseHTTPRequestHandler):
         key = self.path.removeprefix('/feeds/')
         if self.path == '/robots.txt':
             body, mime = b'User-agent: *\n', 'text/plain'
+        elif self.path == MEDIA_PATH:
+            body, mime = MEDIA.read_bytes(), 'image/png'
         elif key in FEEDS and self.path == f'/feeds/{key}':
             body, mime = feed_xml(key), 'application/xml'
         else:

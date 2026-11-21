@@ -12,4 +12,4 @@ RetroNews uses these system libraries. The source package bundles no copies of t
 
 SQLite, Expat and image decoders come from the distribution or its Python build. See the installed distribution packages for their license notices.
 
-The showcase uses authored fictional feed data and actual pixels from the native GTK4 application. GTK renders the installed system monospace font. No font file, logo, feed media or third-party article is distributed within the showcase.
+The showcase uses authored fictional feed data, an original chart of synthetic measurements, and actual pixels from the native GTK4 application. GTK renders the installed system monospace font. No font file, logo, third-party feed media or third-party article is distributed within the showcase.

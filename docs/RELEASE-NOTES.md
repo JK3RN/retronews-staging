@@ -1,4 +1,8 @@
-# RetroNews 0.1.0
+# RetroNews 0.1.1
+
+The showcase now uses a synthetic signal chart attached to its Atom article. The README demonstration follows the headline list, a category filter and the cached reader, including its theme-filtered and original image modes. The newsreader behavior is the same as in 0.1.0.
+
+## RetroNews 0.1.0
 
 - Standalone GTK4 application with RSS/Atom, category and language filters, and offline reading.
 - Four synthetic showcase subscriptions covering both supported feed formats.

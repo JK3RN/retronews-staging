@@ -73,8 +73,8 @@ export XDG_STATE_HOME="$profile/state"
 /usr/bin/python3 -m retronews
 ```
 
-1. Wait for 12 headlines. Press **Enter** and scroll the observation log, then use **Esc**, **L** and **Tab** to verify navigation and filters.
+1. Wait for 12 headlines. Open **Listening for a quiet sky**. Press **I** to compare the theme-filtered chart with its original colors, then scroll the observation log. Use **Esc**, **L** and **Tab** to verify navigation and filters.
 2. Press **Q**. Stop the demo server in the first terminal with **Ctrl+C**. Wait until 60 seconds have elapsed since the successful refresh.
-3. Restart from the second terminal. Check that the status reports a connection error and that the 12 cached articles are still readable.
+3. Restart from the second terminal. Check that the status reports a connection error and that the 12 cached articles are still readable. Reopen the observation log and press **I** to verify that its image is also cached.
 
 The screenshots use a profile-local theme with background `#101619`, foreground `#DAE7E0`, accent `#00FF66` and warning `#FFCC00`. To reproduce that palette, set those values in `$XDG_STATE_HOME/omarchy/current/theme/colors.toml` inside the demo profile. RetroNews reads the theme automatically.

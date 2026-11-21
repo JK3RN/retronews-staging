@@ -4,10 +4,17 @@
 
 ![RetroNews headline list with synthetic RSS and Atom stories in a phosphor-green theme](docs/showcase/headlines.png)
 
-[Article reader](docs/showcase/reader.png) · [Language filter](docs/showcase/language.png)
+## See RetroNews in action
+
+The demo moves from all headlines to the Space & Science category, opens a cached article, and uses **I** to switch between the theme-filtered image and the original. Use the still views to compare the two versions at full resolution.
+
+![GTK4 demo showing the headline list, category filter, article text and both views of a synthetic chart](docs/showcase/demo.gif)
+
+[Article with theme-filtered image](docs/showcase/reader.png) · [Article with original image](docs/showcase/original.png) · [Language filter](docs/showcase/language.png)
 
 - Read feed summaries, supplied article text and optionally prefetched text and images.
 - Browse by category or language and see the last refresh result for each source.
+- Switch cached PNG and JPEG images between their original colors and the active theme palette.
 - Keep a bounded local cache and reopen it without a connection.
 
 ## Quickstart
